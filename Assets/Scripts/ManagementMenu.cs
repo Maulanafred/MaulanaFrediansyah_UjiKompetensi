@@ -28,5 +28,9 @@ public class ManagementMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void PlaySFXButton(){
+        AudioManager.instance.PlaySFX(0);
+    }
+
 
 }
