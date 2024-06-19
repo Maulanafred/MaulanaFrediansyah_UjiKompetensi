@@ -14,15 +14,17 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
 
+
         if(instance == null){
             instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-        else{
-            Destroy(this.gameObject);
-        }
+
+        PlayBGM(0);
         
     }
+
+
 
     // Update is called once per frame
     void Update()
