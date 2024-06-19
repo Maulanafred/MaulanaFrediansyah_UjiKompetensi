@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8567972662008105159}
   m_Layer: 0
   m_Name: Food
-  m_TagString: Untagged
+  m_TagString: Skill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.66, y: 0.54, z: -3.9402008}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4.62, y: 4.62, z: 4.62}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7198227315148962639}
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ff6ce199f0341929ecabfecf217e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
 --- !u!1001 &7198227315148562895
 PrefabInstance:
   m_ObjectHideFlags: 0
