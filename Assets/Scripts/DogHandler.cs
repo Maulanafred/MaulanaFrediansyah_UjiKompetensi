@@ -44,7 +44,7 @@ public class DogHandler : MonoBehaviour
             Destroy(other.gameObject);
             maxfood += 0.25f;
 
-            AudioManager.instance.PlaySFX(1);
+            
 
             foodAmount.fillAmount = maxfood;
 
