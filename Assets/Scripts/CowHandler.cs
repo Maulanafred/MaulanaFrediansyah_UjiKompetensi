@@ -10,6 +10,8 @@ public class CowHandler : MonoBehaviour
 
     public Image foodAmount;
 
+    public GameObject vfxdead;
+
     public float maxfood = 1f;
 
     public float speed;
@@ -27,6 +29,11 @@ public class CowHandler : MonoBehaviour
 
         if(maxfood >= 1f){
             ScoreManager.instance.AddScore(25);
+            GameObject vfx = Instantiate(vfxdead,transform.position,Quaternion.identity);
+
+            AudioManager.instance.PlaySFX(0);
+
+            Destroy(vfx,2f);
             Destroy(this.gameObject);
         }
     }
@@ -35,6 +42,8 @@ public class CowHandler : MonoBehaviour
         if(other.CompareTag("Skill")){
             Destroy(other.gameObject);
             maxfood += 0.25f;
+
+            AudioManager.instance.PlaySFX(1);
 
             foodAmount.fillAmount = maxfood;
 

@@ -23,6 +23,8 @@ public class SkillManager : MonoBehaviour
         if(Input.GetKeyDown(skill) || Input.GetKeyDown(KeyCode.Mouse0)){
             GameObject vfx = Instantiate(vfxSkill,spawnSkill.position,Quaternion.identity);
 
+            AudioManager.instance.PlaySFX(4);
+
             Destroy(vfx,3f);
         }
         

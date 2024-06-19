@@ -22,6 +22,7 @@ public class ManagementMenu : MonoBehaviour
     public void PlayGame(){
         SceneManager.LoadScene(1);
         AudioManager.instance.StopBGM(0);
+        AudioManager.instance.PlayBGM(1);
 
     }
 
@@ -30,7 +31,7 @@ public class ManagementMenu : MonoBehaviour
     }
 
     public void PlaySFXButton(){
-        AudioManager.instance.PlaySFX(0);
+        AudioManager.instance.PlaySFX(3);
     }
     
 
